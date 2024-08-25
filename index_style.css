@@ -111,6 +111,15 @@ body {
 }
 
 
+
+.fa-caret-down{
+  transition: transform 0.3s ease;
+}
+.on-click-rotated{
+  transform: rotate(180deg);/* переворот каретки */
+}
+
+
 /* Content Section */
 .mainPage1 {
   display: flex;
