@@ -3,6 +3,10 @@
   --accent: #E94E4D;
   --background:#f6f6f6; 
   --side__description: #aaa;
+
+  --gradient__btn:radial-gradient(circle, rgba(251,63,194,1) 0%, rgba(233,77,77,1) 69%);
+  --gradient__btn__hover: radial-gradient(circle, rgba(233,77,77,1) 0%, rgba(251,63,194,1) 69%);
+  --transition__backgr_Time: background 0.7s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 body {
@@ -103,17 +107,17 @@ body {
 
 .header__button {
   background: rgb(251,63,194);
-  background: radial-gradient(circle, rgba(251,63,194,1) 0%, rgba(233,77,77,1) 69%);
+  background: var(--gradient__btn);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
-  transition: background 0.7s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: var(--transition__backgr_Time); 
 }
 
 .header__button:hover {
-  background: radial-gradient(circle, rgba(233,77,77,1) 0%, rgba(251,63,194,1) 69%);
+  background: var(--gradient__btn__hover);
   transform: scale(1.05); /* Увеличение кнопки при наведении */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень при наведении */
 }
@@ -125,6 +129,77 @@ body {
 }
 .on-click-rotated{
   transform: rotate(180deg);/* переворот каретки */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: flex-start; /* Aligns items to the left */
+    padding: 10px;
+  }
+
+  .header__menu {
+    flex-direction: column; /* Stacks menu items vertically */
+    gap: 10px; /* Reduces gap between items */
+    width: 100%; /* Ensures menu takes full width */
+    display: none; /* Initially hides the menu */
+  }
+
+  .header__menu-item {
+    font-size: 14px; /* Reduces font size for menu items */
+    width: 100%; /* Menu items take full width */
+    text-align: left; /* Aligns text to the left */
+    padding: 10px 0; /* Adds some padding for touch targets */
+  }
+
+  .header__dropdown-content {
+    position: static; /* Removes absolute positioning */
+    width: 100%; /* Ensures dropdown content takes full width */
+    border: none; /* Removes border */
+    box-shadow: none; /* Removes shadow */
+  }
+
+  .header__dropdown-content-item {
+    padding: 10px 0; /* Adds padding to make it easier to click */
+  }
+
+  .header__button {
+    margin-top: 10px; /* Adds some space above the button */
+    width: 100%; /* Ensures button takes full width */
+  }
+
+  /* Hamburger menu styles */
+  .header__menu-toggle {
+    display: block; /* Shows the hamburger icon */
+    cursor: pointer; /* Makes it clickable */
+    font-size: 24px; /* Increases size of the hamburger icon */
+    color: var(--accent); /* Matches the logo color */
+    margin-left: auto; /* Pushes it to the right side */
+  }
+
+  .header__menu-toggle.active + .header__menu {
+    display: flex; /* Shows the menu when toggle is active */
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo {
+    font-size: 20px; /* Reduces font size for very small screens */
+  }
+
+  .header__logo-subtext {
+    font-size: 12px; /* Reduces subtext font size */
+  }
+
+  .header__menu-item {
+    font-size: 12px; /* Further reduces menu item font size */
+  }
+
+  .header__button {
+    font-size: 14px; /* Reduces button font size */
+    padding: 8px 16px; /* Adjusts padding */
+  }
 }
 
 
@@ -452,6 +527,13 @@ body {
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
+  transition: var(--transition__backgr_Time);
+}
+
+.cases__toggle-button:hover {
+  background: var(--gradient__btn__hover);
+  transform: scale(1.05); /* Увеличение кнопки при наведении */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень при наведении */
 }
 .cases__extra-cases {
   overflow: hidden;
@@ -640,7 +722,7 @@ body {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: var(--transition__backgr_Time);
 }
 
 .consult_form-card__button:hover {
