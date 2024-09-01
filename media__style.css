@@ -70,6 +70,19 @@
     display: none;
   }
 
+  .company-info__title{
+    font-size: 16px;
+  }
+
+  .owners-card__photo img {
+    width: 140%;
+    margin-left: 20px;
+  }
+
+  .owners-card__info{
+    margin-left: 0;
+  }
+
   .freeConsultPage,
   .owners-card {
     display: block;

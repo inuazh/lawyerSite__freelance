@@ -166,7 +166,6 @@ body {
 
   .header__button {
     margin-top: 10px; /* Adds some space above the button */
-    width: 100%; /* Ensures button takes full width */
   }
 
   /* Hamburger menu styles */
