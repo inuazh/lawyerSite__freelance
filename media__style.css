@@ -74,6 +74,10 @@
   .owners-card {
     display: block;
   }
+
+  .freeConsult-card,.consult_form-card{
+    width: auto;
+  }
 }
 
 /* For screens smaller than 480px (small phones) */
