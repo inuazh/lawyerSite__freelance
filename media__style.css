@@ -90,6 +90,7 @@
 
   .freeConsult-card,.consult_form-card{
     width: auto;
+    margin-left: 0;
   }
 }
 
@@ -103,7 +104,7 @@
   }
 
   .features__item {
-    width: 100%;
+    width: 70%;
     /* Full width */
     margin-bottom: 20px;
     /* Space below each item */
