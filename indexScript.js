@@ -34,3 +34,34 @@ iconContainers.forEach(function (iconContainer) {
     icon.classList.toggle("on-click-rotated");
   });
 });
+
+
+
+// модалка
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.querySelector('.modal');
+  const openModalButton = document.querySelector('.header__button');
+  const closeModalOverlay = document.querySelector('.modal__overlay');
+
+  // Function to open the modal
+  function openModal() {
+      modal.style.display = 'flex';
+  }
+
+  // Function to close the modal
+  function closeModal() {
+      modal.style.display = 'none';
+  }
+
+  // Event listeners
+  openModalButton.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default anchor click behavior
+      openModal();
+  });
+
+  closeModalOverlay.addEventListener('click', closeModal);
+});
+

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="media__style.css">
   <!-- библиотека иконок -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="modal.css">
 </head>
 
 <body>
@@ -40,276 +41,307 @@
     </div>
   </header>
 
-  
-    <div class="container">
-      <div class="mainPage1">
-        <div class="mainPage1__text">
-          <h1>ЮРИДИЧЕСКАЯ ПОМОЩЬ<br>
-            <span>ПО ГРАЖДАНСКО-ПРАВОВЫМ И АРБИТРАЖНЫМ СПОРАМ</span>
-          </h1>
-          <p>Ваша ситуация — наше решение!</p>
-          <div class="mainPage1__qr">
-            <img src="other_img/qr.jpg" alt="QR Code">
-            <div class="mainPage1__qr-text">
-              Просто наведите камеру <br>
-              телефона на QR-код и <br>
-              сохраните наши контакты
-            </div>
+
+  <!-- Modal Container -->
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__consult_form-card">
+      <p class="modal__consult_form-card__description">
+        Оставьте заявку и мы свяжемся с вами, чтобы найти решение вашей проблемы:
+      </p>
+      <form class="modal__consult_form-card__form" action="https://formspree.io/f/xyzgorer" method="POST">
+        <input type="text" class="modal__consult_form-card__input" placeholder="ФИО" name="name" required>
+        <input type="tel" class="modal__consult_form-card__input" placeholder="+7 (999) 999-99-99" name="phone"
+          required>
+        <input type="email" class="modal__consult_form-card__input" placeholder="E-mail" name="email" required>
+        <button type="submit" class="modal__consult_form-card__button">Оставить заявку</button>
+      </form>
+
+      <p class="modal__consult_form-card__note">
+        Нажимая на кнопку, вы соглашаетесь с <a href="#" class="modal__consult_form-card__link">Политикой
+          конфиденциальности</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="mainPage1">
+      <div class="mainPage1__text">
+        <h1>ЮРИДИЧЕСКАЯ ПОМОЩЬ<br>
+          <span>ПО ГРАЖДАНСКО-ПРАВОВЫМ И АРБИТРАЖНЫМ СПОРАМ</span>
+        </h1>
+        <p>Ваша ситуация — наше решение!</p>
+        <div class="mainPage1__qr">
+          <img src="other_img/qr.jpg" alt="QR Code">
+          <div class="mainPage1__qr-text">
+            Просто наведите камеру <br>
+            телефона на QR-код и <br>
+            сохраните наши контакты
           </div>
         </div>
-        <div class="mainPage1__Hammer_img">
-          <img src="other_img/hammer.png" alt="Hammer Image">
+      </div>
+      <div class="mainPage1__Hammer_img">
+        <img src="other_img/hammer.png" alt="Hammer Image">
+      </div>
+    </div>
+
+    <div class="mainPage2">
+      <div class="company-info">
+        <div class="company-info__description">
+          <h2 class="company-info__title">МОСКОВСКАЯ МЕЖРЕГИОНАЛЬНАЯ <br> КОЛЛЕГИЯ ЮРИСТОВ <br> «ПРАВОВОЙ ЦЕНТР № 1»
+          </h2>
+          <p class="company-info__subtitle">— Юридическая фирма специализирующаяся по гражданско - правовым и
+            арбитражным спорам. Стаж более 15 лет</p>
+        </div>
+        <div class="company-info__reputation">
+          <div class="company-info__stars">
+            <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
+            <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
+            <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
+            <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
+            <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
+          </div>
+          <p class="company-info__text">Лучшим доказательством эффективности работы нашей команды является ее
+            безупречная репутация.</p>
         </div>
       </div>
 
-      <div class="mainPage2">
-        <div class="company-info">
-          <div class="company-info__description">
-            <h2 class="company-info__title">МОСКОВСКАЯ МЕЖРЕГИОНАЛЬНАЯ <br> КОЛЛЕГИЯ ЮРИСТОВ <br> «ПРАВОВОЙ ЦЕНТР № 1»</h2>
-            <p class="company-info__subtitle">— Юридическая фирма специализирующаяся по гражданско - правовым и арбитражным спорам. Стаж более 15 лет</p>
-          </div>
-          <div class="company-info__reputation">
-            <div class="company-info__stars">
-              <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
-              <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
-              <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
-              <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
-              <img src="other_img/icon-star.png" alt="Star" class="company-info__star">
-            </div>
-            <p class="company-info__text">Лучшим доказательством эффективности работы нашей команды является ее
-              безупречная репутация.</p>
-          </div>
-        </div>
+    </div>
 
+    <div class="features">
+      <div class="features__item">
+        <img src="other_img/portman.png" alt="Icon 1" class="features__icon">
+        <p class="features__text">
+          Большой опыт ведения гражданско-правовым и арбитражных дел в судах и
+          <span class="features__highlight">большинство дел завершаются положительно</span> для наших клиентов.
+        </p>
       </div>
+      <div class="features__item">
+        <img src="other_img/portman.png" alt="Icon 2" class="features__icon">
+        <p class="features__text">
+          Мы добросовестно относимся к каждому делу и беремся за те дела, в которых
+          <span class="features__highlight">имеем большой опыт</span>.
+        </p>
+      </div>
+      <div class="features__item">
+        <img src="other_img/portman.png" alt="Icon 3" class="features__icon">
+        <p class="features__text">
+          Наши <span class="features__highlight">юристы всегда на связи с клиентами</span>
+        </p>
+      </div>
+      <div class="features__item">
+        <img src="other_img/portman.png" alt="Icon 4" class="features__icon">
+        <p class="features__text">
+          Мы делаем все в <span class="features__highlight">рамках закона</span>, чтобы спор нашего клиента был решен в
+          его пользу
+        </p>
+      </div>
+    </div>
 
-      <div class="features">
-        <div class="features__item">
-          <img src="other_img/portman.png" alt="Icon 1" class="features__icon">
-          <p class="features__text">
-            Большой опыт ведения гражданско-правовым и арбитражных дел в судах и
-            <span class="features__highlight">большинство дел завершаются положительно</span> для наших клиентов.
-          </p>
+    <h1 class="company-info__title">Услуги компании</h1>
+    <div class="services">
+      <div class="services__item">
+        <img src="other_img/legal_consalt_img.jpg" alt="Service for individuals" class="services__image">
+        <h3 class="services__title">ФИЗИЧЕСКИМ & ЮРИДИЧЕСКИМ ЛИЦАМ</h3>
+        <p class="services__description">
+          предоставляемые услуги:ведение гражданско- правых споров,
+          арбитражные споры,
+          земельные споры,
+          жилищные споры,
+          помощь в составлении правовых документов,
+          другая юридическая помощь
+        </p>
+        <button class="services__button"
+          onclick="window.location.href='natural_persons/natural_persons.html'">Подробнее</button>
+      </div>
+      <div class="services__item">
+        <img src="other_img/legal_consalt_img.jpg" alt="Service for legal entities" class="services__image">
+        <h3 class="services__title">?????</h3>
+        <p class="services__description">
+          — ?????????????????????????????????????????????????????????????????????.
+        </p>
+        <button class="services__button" onclick="window.location.href='#'">Подробнее</button>
+      </div>
+    </div>
+    <h1 class="company-info__titleCAPS">Завершенные дела «ПРАВОВОЙ ЦЕНТР № 1»</h1>
+
+
+
+    <div class="cases__container">
+      <div class="cases__card">
+        <div class="cases__card-date">08.04.2024</div>
+        <div class="cases__card-number">№ 02-5537/2023</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> ДГИ отказал нашему доверителю, страдающему тяжелой формой хронических
+          заболеваний во внеочередном получении отдельного жилого помещения по договору социального найма.
         </div>
-        <div class="features__item">
-          <img src="other_img/portman.png" alt="Icon 2" class="features__icon">
-          <p class="features__text">
-            Мы добросовестно относимся к каждому делу и беремся за те дела, в которых
-            <span class="features__highlight">имеем большой опыт</span>.
-          </p>
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+      <div class="cases__card">
+        <div class="cases__card-date">05.04.2024</div>
+        <div class="cases__card-number">А40-201272/2023</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> ДГИ отказал ООО СТОМАТОЛОГИЯ "БЕСКУДНИКОВО" в выкупе арендуемого нежилого
+          помещения по ФЗ №159 Суд признал действия Ответчика незаконными и обязал заключить договор купли-продажи на
+          условиях нашего доверителя.
         </div>
-        <div class="features__item">
-          <img src="other_img/portman.png" alt="Icon 3" class="features__icon">
-          <p class="features__text">
-            Наши <span class="features__highlight">юристы всегда на связи с клиентами</span>
-          </p>
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+      <div class="cases__card">
+        <div class="cases__card-date">03.04.2024</div>
+        <div class="cases__card-number">№ 02-4510/2024</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> жилищных условий, ввиду смены статуса общежития на статус коммунальной
+          квартиры, в связи с чем очередники были признаны обеспеченными нормой жилого помещения.
         </div>
-        <div class="features__item">
-          <img src="other_img/portman.png" alt="Icon 4" class="features__icon">
-          <p class="features__text">
-            Мы делаем все в <span class="features__highlight">рамках закона</span>, чтобы спор нашего клиента был решен в его пользу
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+      <div class="cases__card">
+        <div class="cases__card-date">26.03.2024</div>
+        <div class="cases__card-number">№ 02-2137/2024</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> Наш доверитель со своей семьей с 2016 года не могли пройти перерегистрацию
+          учетного дела. ДГИ незаконно испрашивали документы с супруги, которая не состоит на жилищном учете.
+        </div>
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+    </div>
+
+    <div class="cases__extra-cases">
+      <!-- Extra case elements -->
+      <div class="cases__card">
+        <div class="cases__card-date">15.03.2024</div>
+        <div class="cases__card-number">№ 02-1000/2024</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> ДГИ не согласился на продление договора аренды для нашего доверителя. Суд
+          постановил решение в пользу арендатора.
+        </div>
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+      <div class="cases__card">
+        <div class="cases__card-date">10.03.2024</div>
+        <div class="cases__card-number">№ 02-2000/2024</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> Наш доверитель оспаривал отказ в предоставлении социальных льгот по причине
+          недостоверных данных. Суд встал на сторону доверителя.
+        </div>
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+      <div class="cases__card">
+        <div class="cases__card-date">01.03.2024</div>
+        <div class="cases__card-number">№ 02-3000/2024</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> ДГИ отказал в пересмотре дела о праве собственности на жилое помещение. Решение
+          суда было в пользу нашего доверителя.
+        </div>
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+      <div class="cases__card">
+        <div class="cases__card-date">25.02.2024</div>
+        <div class="cases__card-number">№ 02-4000/2024</div>
+        <div class="cases__card-content">
+          <strong>Суть спора:</strong> ДГИ требовал дополнительные документы для регистрации нашего доверителя. Суд
+          признал требование незаконным.
+        </div>
+        <div class="cases__card-decision">Решение: удовлетворено</div>
+        <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
+      </div>
+    </div>
+    <button class="cases__toggle-button" onclick="cases_toggleCases()">Больше дел</button>
+
+    <!-- ownerPage -->
+
+    <h1 class="company-info__titleCAPS">Ведущие юристы
+      по жилищным вопросам</h1>
+    <div class="owners-card">
+      <div class="owners-card__photo">
+        <img src="other_img/owner.jpg" alt="owners Photo">
+      </div>
+      <div class="owners-card__info">
+        <div class="owners-card__name">Султанов Камиль Арифович <br> (кандидат экономических наук, доцент) <br>
+          & <br> Шихнабиев Рустам Абдулкадирович</div>
+        <div class="owners-card__bio">
+          <p class="owners__legasy">Стаж юридической деятельности более 15 лет</p>
+          <p class="owners-card__bio__desc">«Тысячи семей, стремящихся улучшить жилищные условия,
+            сталкиваются с незаконными действиями Департамента городского имущества г.Москвы. Многие семьи, спустя
+            десятки лет снимаются с жилищного учета, тысячи очередников борются годами с препятствиями для
+            перерегистрации учетного дела, заключения договора социального найма или приватизации жилого помещения.
+            <br>
+            <br>
+            Знание своих прав - важный шаг, чтобы избежать обмана. Однако, доверить решение этих проблем
+            профессионалам
+            - еще более надежное решение»
           </p>
         </div>
       </div>
+    </div>
 
-      <h1 class="company-info__title">Услуги компании</h1>
-      <div class="services">
-        <div class="services__item">
-          <img src="other_img/legal_consalt_img.jpg" alt="Service for individuals" class="services__image">
-          <h3 class="services__title">ФИЗИЧЕСКИМ & ЮРИДИЧЕСКИМ ЛИЦАМ</h3>
-          <p class="services__description">
-            предоставляемые услуги:ведение гражданско- правых споров,
-            арбитражные споры,
-            земельные споры,
-            жилищные споры,
-            помощь в составлении правовых документов, 
-            другая юридическая помощь
-          </p>
-          <button class="services__button" onclick="window.location.href='natural_persons/natural_persons.html'">Подробнее</button>
-        </div>
-        <div class="services__item">
-          <img src="other_img/legal_consalt_img.jpg" alt="Service for legal entities" class="services__image">
-          <h3 class="services__title">?????</h3>
-          <p class="services__description">
-            — ?????????????????????????????????????????????????????????????????????.
-          </p>
-          <button class="services__button" onclick="window.location.href='#'">Подробнее</button>
-        </div>
+
+    <!-- freeConsultPage -->
+    <h1 class="company-info__titleCAPS">Получите бесплатную консультацию юриста</h1>
+    <div class="freeConsultPage">
+      <div class="freeConsult-card">
+        <h2>Всего за 30 минут Вы узнаете:</h2>
+        <ul>
+          <li>Какой вариант решения ситуации подходит именно Вам.</li>
+          <li>Какие есть риски и подводные камни существуют в Вашем случае.</li>
+          <li>Сколько времени займет решение Вашей проблемы.</li>
+          <li>Какие документы понадобятся и сколько всё это будет стоить.</li>
+        </ul>
       </div>
-      <h1 class="company-info__titleCAPS">Завершенные дела «ПРАВОВОЙ ЦЕНТР № 1»</h1>
-
-
-
-      <div class="cases__container">
-        <div class="cases__card">
-          <div class="cases__card-date">08.04.2024</div>
-          <div class="cases__card-number">№ 02-5537/2023</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> ДГИ отказал нашему доверителю, страдающему тяжелой формой хронических
-            заболеваний во внеочередном получении отдельного жилого помещения по договору социального найма.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-        <div class="cases__card">
-          <div class="cases__card-date">05.04.2024</div>
-          <div class="cases__card-number">А40-201272/2023</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> ДГИ отказал ООО СТОМАТОЛОГИЯ "БЕСКУДНИКОВО" в выкупе арендуемого нежилого
-            помещения по ФЗ №159 Суд признал действия Ответчика незаконными и обязал заключить договор купли-продажи на
-            условиях нашего доверителя.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-        <div class="cases__card">
-          <div class="cases__card-date">03.04.2024</div>
-          <div class="cases__card-number">№ 02-4510/2024</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> жилищных условий, ввиду смены статуса общежития на статус коммунальной
-            квартиры, в связи с чем очередники были признаны обеспеченными нормой жилого помещения.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-        <div class="cases__card">
-          <div class="cases__card-date">26.03.2024</div>
-          <div class="cases__card-number">№ 02-2137/2024</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> Наш доверитель со своей семьей с 2016 года не могли пройти перерегистрацию
-            учетного дела. ДГИ незаконно испрашивали документы с супруги, которая не состоит на жилищном учете.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-      </div>
-
-      <div class="cases__extra-cases">
-        <!-- Extra case elements -->
-        <div class="cases__card">
-          <div class="cases__card-date">15.03.2024</div>
-          <div class="cases__card-number">№ 02-1000/2024</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> ДГИ не согласился на продление договора аренды для нашего доверителя. Суд
-            постановил решение в пользу арендатора.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-        <div class="cases__card">
-          <div class="cases__card-date">10.03.2024</div>
-          <div class="cases__card-number">№ 02-2000/2024</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> Наш доверитель оспаривал отказ в предоставлении социальных льгот по причине
-            недостоверных данных. Суд встал на сторону доверителя.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-        <div class="cases__card">
-          <div class="cases__card-date">01.03.2024</div>
-          <div class="cases__card-number">№ 02-3000/2024</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> ДГИ отказал в пересмотре дела о праве собственности на жилое помещение. Решение
-            суда было в пользу нашего доверителя.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-        <div class="cases__card">
-          <div class="cases__card-date">25.02.2024</div>
-          <div class="cases__card-number">№ 02-4000/2024</div>
-          <div class="cases__card-content">
-            <strong>Суть спора:</strong> ДГИ требовал дополнительные документы для регистрации нашего доверителя. Суд
-            признал требование незаконным.
-          </div>
-          <div class="cases__card-decision">Решение: удовлетворено</div>
-          <div class="cases__card-button"><a href="#">Посмотреть дело</a></div>
-        </div>
-      </div>
-      <button class="cases__toggle-button" onclick="cases_toggleCases()">Больше дел</button>
-
-      <!-- ownerPage -->
-
-      <h1 class="company-info__titleCAPS">Ведущие юристы
-        по жилищным вопросам</h1>
-      <div class="owners-card">
-        <div class="owners-card__photo">
-          <img src="other_img/owner.jpg" alt="owners Photo">
-        </div>
-        <div class="owners-card__info">
-          <div class="owners-card__name">Султанов Камиль Арифович <br> (кандидат экономических наук, доцент) <br>
-            & <br> Шихнабиев Рустам Абдулкадирович</div>
-          <div class="owners-card__bio">
-            <p class="owners__legasy">Стаж юридической деятельности более 15 лет</p>
-            <p class="owners-card__bio__desc">«Тысячи семей, стремящихся улучшить жилищные условия,
-              сталкиваются с незаконными действиями Департамента городского имущества г.Москвы. Многие семьи, спустя
-              десятки лет снимаются с жилищного учета, тысячи очередников борются годами с препятствиями для
-              перерегистрации учетного дела, заключения договора социального найма или приватизации жилого помещения.
-              <br>
-              <br>
-              Знание своих прав - важный шаг, чтобы избежать обмана. Однако, доверить решение этих проблем
-              профессионалам
-              - еще более надежное решение»
-            </p>
-          </div>
-        </div>
+      <div class="consult_form-card">
+        <p class="consult_form-card__description">
+          Оставьте заявку и мы свяжемся с вами, чтобы найти решение вашей проблемы:
+        </p>
+        <form class="consult_form-card__form" action="https://formspree.io/f/xyzgorer" method="POST">
+          <input type="text" class="consult_form-card__input" name="name" placeholder="ФИО" required>
+          <input type="tel" class="consult_form-card__input" name="phone" placeholder="+7 (999) 999-99-99" required>
+          <input type="email" class="consult_form-card__input" name="email" placeholder="E-mail" required>
+          <button type="submit" class="consult_form-card__button">Оставить заявку</button>
+        </form>
+        <p class="consult_form-card__note">
+          Нажимая на кнопку, вы соглашаетесь с <a href="#" class="consult_form-card__link">Политикой
+            конфиденциальности</a>
+        </p>
       </div>
       
+    </div>
 
-      <!-- freeConsultPage -->
-      <h1 class="company-info__titleCAPS">Получите бесплатную консультацию юриста</h1>
-      <div class="freeConsultPage">
-        <div class="freeConsult-card">
-          <h2>Всего за 30 минут Вы узнаете:</h2>
-          <ul>
-            <li>Какой вариант решения ситуации подходит именно Вам.</li>
-            <li>Какие есть риски и подводные камни существуют в Вашем случае.</li>
-            <li>Сколько времени займет решение Вашей проблемы.</li>
-            <li>Какие документы понадобятся и сколько всё это будет стоить.</li>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__section footer__section--left">
+          <h3 class="footer__logo">
+            МОСКОВСКАЯ МЕЖРЕГИОНАЛЬНАЯ <br> КОЛЛЕГИЯ ЮРИСТОВ <br> «ПРАВОВОЙ ЦЕНТР № 1»<br>
+            <span class="footer__subtitle">ЮРИДИЧЕСКАЯ КОМПАНИЯ</span>
+          </h3>
+          <ul class="footer__contacts">
+            <li class="footer__contact-item"><a href="tel:+79169713781" class="footer__link">+7(916)971-97-81</a></li>
+
+            <li class="footer__contact-item"><a href="mailto:kabaev@gdimos.ru"
+                class="footer__link">mmka.pravo@gmail.com</a></li>
+            <li class="footer__contact-item"><a href="https://wa.me/79169713781" class="footer__link">Написать в
+                Whatsapp</a></li>
           </ul>
+          <p class="footer__rights">© 2024. Все права защищены.</p>
+          <p class="footer__company">ООО «ПРАВОВОЙ ЦЕНТР № 1»</p>
         </div>
-        <div class="consult_form-card">
-          <p class="consult_form-card__description">
-            Оставьте заявку и мы свяжемся с вами, чтобы найти решение вашей проблемы:
+        <div class="footer__section footer__section--right">
+          <p class="footer__address">
+            129281, г. Москва, ул. Менжинского, д. 24, Корп. 2 офис 9 <br>
+            филиал в г. Махачкале, 367013, проспект Гамидова 16д, 5 этаж, офис №5
           </p>
-          <form class="consult_form-card__form">
-              <input type="text" class="consult_form-card__input" placeholder="ФИО">
-              <input type="tel" class="consult_form-card__input" placeholder="+7 (999) 999-99-99">
-              <input type="email" class="consult_form-card__input" placeholder="E-mail">
-              <button type="submit" class="consult_form-card__button">Оставить заявку</button>
-          </form>
-          <p class="consult_form-card__note">
-              Нажимая на кнопку, вы соглашаетесь с <a href="#" class="consult_form-card__link">Политикой конфиденциальности</a>
-          </p>
-      </div>
-      </div>
-
-      <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__section footer__section--left">
-                <h3 class="footer__logo">
-                  МОСКОВСКАЯ МЕЖРЕГИОНАЛЬНАЯ <br> КОЛЛЕГИЯ ЮРИСТОВ <br> «ПРАВОВОЙ ЦЕНТР № 1»<br>
-                    <span class="footer__subtitle">ЮРИДИЧЕСКАЯ КОМПАНИЯ</span>
-                </h3>
-                <ul class="footer__contacts">
-                    <li class="footer__contact-item"><a href="tel:+79169713781" class="footer__link">+7(916)971-97-81</a></li>
-                    
-                    <li class="footer__contact-item"><a href="mailto:kabaev@gdimos.ru" class="footer__link">mmka.pravo@gmail.com</a></li>
-                    <li class="footer__contact-item"><a href="https://wa.me/79169713781" class="footer__link">Написать в Whatsapp</a></li>
-                </ul>
-                <p class="footer__rights">© 2024. Все права защищены.</p>
-                <p class="footer__company">ООО «ПРАВОВОЙ ЦЕНТР № 1»</p>
-            </div>
-            <div class="footer__section footer__section--right">
-                <p class="footer__address">
-                  129281, г. Москва, ул. Менжинского, д. 24, Корп. 2 офис 9 <br>
-                  филиал в г. Махачкале, 367013, проспект Гамидова 16д, 5 этаж, офис №5
-                </p>
-                <p class="footer__working-hours">Режим работы: ежедневно</p>
-                <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
-            </div>
+          <p class="footer__working-hours">Режим работы: ежедневно</p>
+          <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
         </div>
+      </div>
     </footer>
 
 

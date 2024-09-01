@@ -1,77 +1,115 @@
-
 /* mainpage1,2 features  */
 /* For screens smaller than 992px (tablets) */
 @media screen and (max-width: 992px) {
   .mainPage1 {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align items */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center align items */
+    text-align: center;
+    /* Center text */
   }
 
   .mainPage1__text {
-    width: 100%; /* Full width */
-    margin-bottom: 20px; /* Space below text */
+    width: 100%;
+    /* Full width */
+    margin-bottom: 20px;
+    /* Space below text */
   }
 
   .mainPage1__Hammer_img {
-    width: 80%; /* Reduce image width */
+    width: 80%;
+    /* Reduce image width */
   }
 
   .company-info {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the start */
-    text-align: left; /* Align text to the left */
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: flex-start;
+    /* Align items to the start */
+    text-align: left;
+    /* Align text to the left */
   }
 
   .company-info__description {
-    max-width: 100%; /* Full width */
+    max-width: 100%;
+    /* Full width */
   }
 
   .company-info__reputation {
-    text-align: left; /* Align text to the left */
-    margin-top: 20px; /* Space above reputation section */
+    text-align: left;
+    /* Align text to the left */
+    margin-top: 20px;
+    /* Space above reputation section */
   }
 
   .features {
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
   }
 
   .features__item {
-    width: calc(50% - 20px); /* Two items per row */
+    width: calc(50% - 20px);
+    /* Two items per row */
   }
 }
 
 /* For screens smaller than 768px (large phones) */
 @media screen and (max-width: 768px) {
   .features__item {
-    width: calc(100% - 20px); /* One item per row */
+    width: calc(100% - 20px);
+    /* One item per row */
+  }
+
+  /* прячем уродства на телефонах */
+
+  .company-info__titleCAPS,
+  .cases__container,
+  .cases__toggle-button,
+  .services__item {
+    display: none;
+  }
+
+  .freeConsultPage,
+  .owners-card {
+    display: block;
   }
 }
 
 /* For screens smaller than 480px (small phones) */
 @media screen and (max-width: 480px) {
   .features {
-    flex-direction: column; /* Stack items vertically */
-    align-items: stretch; /* Stretch items to fill width */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: stretch;
+    /* Stretch items to fill width */
   }
 
   .features__item {
-    width: 100%; /* Full width */
-    margin-bottom: 20px; /* Space below each item */
+    width: 100%;
+    /* Full width */
+    margin-bottom: 20px;
+    /* Space below each item */
   }
 
   .mainPage1__qr {
-    flex-direction: column; /* Stack QR and text vertically */
-    align-items: center; /* Center align */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    /* Stack QR and text vertically */
+    align-items: center;
+    /* Center align */
+    text-align: center;
+    /* Center text */
   }
 
   .mainPage1__qr img {
-    width: 80px; /* Smaller QR code */
-    height: 80px; /* Smaller QR code */
+    width: 80px;
+    /* Smaller QR code */
+    height: 80px;
+    /* Smaller QR code */
   }
 
   .mainPage1__qr-text {
-    margin-top: 10px; /* Space above QR text */
+    margin-top: 10px;
+    /* Space above QR text */
   }
 }
